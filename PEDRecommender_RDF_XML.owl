@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY PEDRecommender "http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:PEDRecommender="http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneCamera -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneCamera">
+        <rdfs:range rdf:resource="&PEDRecommender;Camera"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneChip -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneChip">
+        <rdfs:range rdf:resource="&PEDRecommender;Chip"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneDisplay -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneDisplay">
+        <rdfs:range rdf:resource="&PEDRecommender;Display"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneFormFactor -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneFormFactor">
+        <rdfs:range rdf:resource="&PEDRecommender;FormFactor"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneManufacturer -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneManufacturer">
+        <rdfs:range rdf:resource="&PEDRecommender;Manufacturer"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneOS -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneOS">
+        <rdfs:range rdf:resource="&PEDRecommender;OS"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhonePredecesor -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhonePredecesor">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneRAM -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneRAM">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&PEDRecommender;RAM"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneRemovableStorage -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneRemovableStorage">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&PEDRecommender;RemovableStorage"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneStorage -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneStorage">
+        <rdfs:range rdf:resource="&PEDRecommender;InternalStorage"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneSuccessor -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneSuccessor">
+        <rdfs:range rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneType -->
+
+    <ObjectProperty rdf:about="&PEDRecommender;PhoneType">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&PEDRecommender;Type"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#AndroidVersion -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;AndroidVersion">
+        <rdfs:domain rdf:resource="&PEDRecommender;Android"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#AndroidVersionName -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;AndroidVersionName">
+        <rdfs:domain rdf:resource="&PEDRecommender;Android"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Battery -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;Battery">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#BatteryRemoveable -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;BatteryRemoveable">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#CameraMP -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;CameraMP">
+        <rdfs:domain rdf:resource="&PEDRecommender;Camera"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#CameraWithFlash -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;CameraWithFlash"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#ChipName -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;ChipName">
+        <rdfs:domain rdf:resource="&PEDRecommender;Chip"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Depth -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;Depth">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#DiscontinuedDate -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;DiscontinuedDate">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#DisplayResolution -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;DisplayResolution">
+        <rdfs:domain rdf:resource="&PEDRecommender;Display"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#DisplaySize -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;DisplaySize">
+        <rdfs:domain rdf:resource="&PEDRecommender;Display"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#FormFactorType -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;FormFactorType">
+        <rdfs:domain rdf:resource="&PEDRecommender;FormFactor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Height -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;Height">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#ManufacturerName -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;ManufacturerName">
+        <rdfs:domain rdf:resource="&PEDRecommender;Manufacturer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#PhoneName -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;PhoneName">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#RAMSize -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;RAMSize">
+        <rdfs:domain rdf:resource="&PEDRecommender;RAM"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#ReleaseDate -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;ReleaseDate">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#SmartphoneType -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;SmartphoneType">
+        <rdfs:domain rdf:resource="&PEDRecommender;Type"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#StorageCapacity -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;StorageCapacity">
+        <rdfs:domain rdf:resource="&PEDRecommender;Storage"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#UnlockedPrice -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;UnlockedPrice">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Weight -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;Weight">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Width -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;Width">
+        <rdfs:domain rdf:resource="&PEDRecommender;Phone"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#iosVersion -->
+
+    <DatatypeProperty rdf:about="&PEDRecommender;iosVersion">
+        <rdfs:domain rdf:resource="&PEDRecommender;iOS"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Android -->
+
+    <Class rdf:about="&PEDRecommender;Android">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;OS"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Camera -->
+
+    <Class rdf:about="&PEDRecommender;Camera"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Chip -->
+
+    <Class rdf:about="&PEDRecommender;Chip"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Display -->
+
+    <Class rdf:about="&PEDRecommender;Display"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#FormFactor -->
+
+    <Class rdf:about="&PEDRecommender;FormFactor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#FrontCamera -->
+
+    <Class rdf:about="&PEDRecommender;FrontCamera">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;Camera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#InternalStorage -->
+
+    <Class rdf:about="&PEDRecommender;InternalStorage">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;Storage"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Manufacturer -->
+
+    <Class rdf:about="&PEDRecommender;Manufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#OS -->
+
+    <Class rdf:about="&PEDRecommender;OS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Phone -->
+
+    <Class rdf:about="&PEDRecommender;Phone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#RAM -->
+
+    <Class rdf:about="&PEDRecommender;RAM"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#RearCamera -->
+
+    <Class rdf:about="&PEDRecommender;RearCamera">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;Camera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#RemovableStorage -->
+
+    <Class rdf:about="&PEDRecommender;RemovableStorage">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;Storage"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Storage -->
+
+    <Class rdf:about="&PEDRecommender;Storage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Type -->
+
+    <Class rdf:about="&PEDRecommender;Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#iOS -->
+
+    <Class rdf:about="&PEDRecommender;iOS">
+        <rdfs:subClassOf rdf:resource="&PEDRecommender;OS"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Android_4.4 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Android_4.4">
+        <rdf:type rdf:resource="&PEDRecommender;Android"/>
+        <PEDRecommender:AndroidVersion rdf:datatype="&xsd;string">4.4</PEDRecommender:AndroidVersion>
+        <PEDRecommender:AndroidVersionName rdf:datatype="&xsd;string">KitKat</PEDRecommender:AndroidVersionName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Android_5.0 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Android_5.0">
+        <rdf:type rdf:resource="&PEDRecommender;Android"/>
+        <PEDRecommender:AndroidVersion rdf:datatype="&xsd;string">5.0</PEDRecommender:AndroidVersion>
+        <PEDRecommender:AndroidVersionName rdf:datatype="&xsd;string">Lollipop</PEDRecommender:AndroidVersionName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#AppleA7 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;AppleA7">
+        <rdf:type rdf:resource="&PEDRecommender;Chip"/>
+        <PEDRecommender:ChipName rdf:datatype="&xsd;string">Apple A7, Apple M7 motion coprocessor</PEDRecommender:ChipName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Bar -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Bar">
+        <rdf:type rdf:resource="&PEDRecommender;FormFactor"/>
+        <PEDRecommender:FormFactorType rdf:datatype="&xsd;string">Bar</PEDRecommender:FormFactorType>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_1 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_1">
+        <rdf:type rdf:resource="&PEDRecommender;RAM"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">1GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_128 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_128">
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">128GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_16 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_16">
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">16GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_2 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_2">
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">2GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_32 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_32">
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">32GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_64 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_64">
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">64GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#GB_8 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;GB_8">
+        <rdf:type rdf:resource="&PEDRecommender;RAM"/>
+        <rdf:type rdf:resource="&PEDRecommender;Storage"/>
+        <PEDRecommender:StorageCapacity rdf:datatype="&xsd;string">8GB</PEDRecommender:StorageCapacity>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#HTC_One_2014 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;HTC_One_2014">
+        <rdf:type rdf:resource="&PEDRecommender;Phone"/>
+        <PEDRecommender:Depth rdf:datatype="&xsd;float">0.37</PEDRecommender:Depth>
+        <PEDRecommender:Width rdf:datatype="&xsd;float">2.69</PEDRecommender:Width>
+        <PEDRecommender:Weight rdf:datatype="&xsd;string">2.695.0</PEDRecommender:Weight>
+        <PEDRecommender:ReleaseDate rdf:datatype="&xsd;dateTime">2013-01-01T00:00:00-00:00</PEDRecommender:ReleaseDate>
+        <PEDRecommender:Battery rdf:datatype="&xsd;string">2300mAh</PEDRecommender:Battery>
+        <PEDRecommender:Height rdf:datatype="&xsd;float">5.41</PEDRecommender:Height>
+        <PEDRecommender:PhoneName rdf:datatype="&xsd;string">HTC One (2014)</PEDRecommender:PhoneName>
+        <PEDRecommender:PhoneOS rdf:resource="&PEDRecommender;Android_4.4"/>
+        <PEDRecommender:PhoneRAM rdf:resource="&PEDRecommender;GB_2"/>
+        <PEDRecommender:PhoneStorage rdf:resource="&PEDRecommender;GB_64"/>
+        <PEDRecommender:PhoneCamera rdf:resource="&PEDRecommender;MP_4.0"/>
+        <PEDRecommender:PhoneFormFactor rdf:resource="&PEDRecommender;Slate"/>
+        <PEDRecommender:PhoneType rdf:resource="&PEDRecommender;Smartphone"/>
+        <PEDRecommender:PhoneChip rdf:resource="&PEDRecommender;Snapdragon_600"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#IPS_4 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;IPS_4">
+        <rdf:type rdf:resource="&PEDRecommender;Display"/>
+        <PEDRecommender:DisplaySize rdf:datatype="&xsd;string">4in</PEDRecommender:DisplaySize>
+        <PEDRecommender:DisplayResolution rdf:datatype="&xsd;string">640x1136</PEDRecommender:DisplayResolution>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#IPS_4.7 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;IPS_4.7">
+        <rdf:type rdf:resource="&PEDRecommender;Display"/>
+        <PEDRecommender:DisplaySize rdf:datatype="&xsd;string">4.7in</PEDRecommender:DisplaySize>
+        <PEDRecommender:DisplayResolution rdf:datatype="&xsd;string">768x1280</PEDRecommender:DisplayResolution>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#LG_Electronics -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;LG_Electronics">
+        <rdf:type rdf:resource="&PEDRecommender;Manufacturer"/>
+        <PEDRecommender:ManufacturerName rdf:datatype="&xsd;string">LG_Electronics</PEDRecommender:ManufacturerName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_1.2 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_1.2">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;string">1.2</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_10 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_10">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">10.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_13 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_13">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">13.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_16 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_16">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">16.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_2.0 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_2.0">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">2.0</PEDRecommender:CameraMP>
+        <PEDRecommender:CameraWithFlash rdf:datatype="&xsd;string">No</PEDRecommender:CameraWithFlash>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_3 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_3">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">3.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_4.0 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_4.0">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">4.0</PEDRecommender:CameraMP>
+        <PEDRecommender:CameraWithFlash rdf:datatype="&xsd;string">Yes</PEDRecommender:CameraWithFlash>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_5 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_5">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">5.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_6 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_6">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">6.0</PEDRecommender:CameraMP>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#MP_8 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;MP_8">
+        <rdf:type rdf:resource="&PEDRecommender;Camera"/>
+        <PEDRecommender:CameraMP rdf:datatype="&xsd;float">8.0</PEDRecommender:CameraMP>
+        <PEDRecommender:CameraWithFlash rdf:datatype="&xsd;string">No</PEDRecommender:CameraWithFlash>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Nexus_4 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Nexus_4">
+        <rdf:type rdf:resource="&PEDRecommender;Phone"/>
+        <PEDRecommender:Depth rdf:datatype="&xsd;float">0.36</PEDRecommender:Depth>
+        <PEDRecommender:Width rdf:datatype="&xsd;float">2.7</PEDRecommender:Width>
+        <PEDRecommender:UnlockedPrice rdf:datatype="&xsd;float">200.0</PEDRecommender:UnlockedPrice>
+        <PEDRecommender:ReleaseDate rdf:datatype="&xsd;dateTime">2012-11-03T00:00:00-00:00</PEDRecommender:ReleaseDate>
+        <PEDRecommender:DiscontinuedDate rdf:datatype="&xsd;dateTime">2013-11-01T00:00:00-00:00</PEDRecommender:DiscontinuedDate>
+        <PEDRecommender:Battery rdf:datatype="&xsd;string">2100mAh</PEDRecommender:Battery>
+        <PEDRecommender:Weight rdf:datatype="&xsd;float">4.9</PEDRecommender:Weight>
+        <PEDRecommender:Height rdf:datatype="&xsd;float">5.27</PEDRecommender:Height>
+        <PEDRecommender:PhoneName rdf:datatype="&xsd;string">Nexus 4</PEDRecommender:PhoneName>
+        <PEDRecommender:BatteryRemoveable rdf:datatype="&xsd;string">No</PEDRecommender:BatteryRemoveable>
+        <PEDRecommender:PhoneOS rdf:resource="&PEDRecommender;Android_4.4"/>
+        <PEDRecommender:PhoneStorage rdf:resource="&PEDRecommender;GB_16"/>
+        <PEDRecommender:PhoneRAM rdf:resource="&PEDRecommender;GB_2"/>
+        <PEDRecommender:PhoneDisplay rdf:resource="&PEDRecommender;IPS_4.7"/>
+        <PEDRecommender:PhoneManufacturer rdf:resource="&PEDRecommender;LG_Electronics"/>
+        <PEDRecommender:PhoneCamera rdf:resource="&PEDRecommender;MP_8"/>
+        <PEDRecommender:PhoneFormFactor rdf:resource="&PEDRecommender;Slate"/>
+        <PEDRecommender:PhoneType rdf:resource="&PEDRecommender;Smartphone"/>
+        <PEDRecommender:PhoneChip rdf:resource="&PEDRecommender;SnapdragonS4Pro"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Slate -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Slate">
+        <rdf:type rdf:resource="&PEDRecommender;FormFactor"/>
+        <PEDRecommender:FormFactorType rdf:datatype="&xsd;string">Slate</PEDRecommender:FormFactorType>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Smartphone -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Smartphone">
+        <rdf:type rdf:resource="&PEDRecommender;Type"/>
+        <PEDRecommender:SmartphoneType rdf:datatype="&xsd;string">Smartphone</PEDRecommender:SmartphoneType>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#SnapdragonS4Pro -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;SnapdragonS4Pro">
+        <rdf:type rdf:resource="&PEDRecommender;Chip"/>
+        <PEDRecommender:ChipName rdf:datatype="&xsd;string">Qualcomm Snapdragon S4 Pro APQ8064</PEDRecommender:ChipName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#Snapdragon_600 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;Snapdragon_600">
+        <rdf:type rdf:resource="&PEDRecommender;Chip"/>
+        <PEDRecommender:ChipName rdf:datatype="&xsd;string">Qualcomm Snapdragon 600 APQ8064</PEDRecommender:ChipName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#SuperLCD_4.7 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;SuperLCD_4.7">
+        <rdf:type rdf:resource="&PEDRecommender;Display"/>
+        <PEDRecommender:DisplayResolution rdf:datatype="&xsd;string">1920x1080</PEDRecommender:DisplayResolution>
+        <PEDRecommender:DisplaySize rdf:datatype="&xsd;string">4.7</PEDRecommender:DisplaySize>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#iPhone5s -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;iPhone5s">
+        <rdf:type rdf:resource="&PEDRecommender;Phone"/>
+        <PEDRecommender:Depth rdf:datatype="&xsd;float">0.3</PEDRecommender:Depth>
+        <PEDRecommender:Battery rdf:datatype="&xsd;string">1560mAh</PEDRecommender:Battery>
+        <PEDRecommender:Width rdf:datatype="&xsd;float">2.31</PEDRecommender:Width>
+        <PEDRecommender:ReleaseDate rdf:datatype="&xsd;dateTime">2013-09-20T00:00:00-00:00</PEDRecommender:ReleaseDate>
+        <PEDRecommender:Weight rdf:datatype="&xsd;float">3.95</PEDRecommender:Weight>
+        <PEDRecommender:Height rdf:datatype="&xsd;float">4.87</PEDRecommender:Height>
+        <PEDRecommender:BatteryRemoveable rdf:datatype="&xsd;string">No</PEDRecommender:BatteryRemoveable>
+        <PEDRecommender:PhoneName rdf:datatype="&xsd;string">iPhone 5s</PEDRecommender:PhoneName>
+        <PEDRecommender:PhoneChip rdf:resource="&PEDRecommender;AppleA7"/>
+        <PEDRecommender:PhoneRAM rdf:resource="&PEDRecommender;GB_1"/>
+        <PEDRecommender:PhoneDisplay rdf:resource="&PEDRecommender;IPS_4"/>
+        <PEDRecommender:PhoneCamera rdf:resource="&PEDRecommender;MP_8"/>
+        <PEDRecommender:PhoneType rdf:resource="&PEDRecommender;Smartphone"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akash/ontologies/2014/10/PEDRecommender#ios_8.1 -->
+
+    <NamedIndividual rdf:about="&PEDRecommender;ios_8.1">
+        <rdf:type rdf:resource="&PEDRecommender;iOS"/>
+        <PEDRecommender:iosVersion rdf:datatype="&xsd;string">8.1</PEDRecommender:iosVersion>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

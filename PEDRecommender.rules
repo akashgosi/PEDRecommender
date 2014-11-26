@@ -1,0 +1,5 @@
+[greatDisplayRule: (?phone baseURI:PhoneDisplay ?display), (?display baseURI:DisplayResolution "4.7in") -> (?phone baseURI:GreatDisplay "Yes"^^xsd:string) ]
+[entertainmentRule: (?phone baseURI:GreatDisplay "Yes") -> (?phone baseURI:Entertainment "Yes"^^xsd:string)]
+[mediaConsumptionRule: (?phone baseURI:GreatDisplay "Yes") -> (?phone baseURI:MediaConsumption "Yes"^^xsd:string)]
+[lightWeightRule: (?phone baseURI:Weight ?x), lessThan(?x,5.5) -> (?phone baseURI:LightWeight "Yes"^^xsd:string)]
+[BigScreenRule: (?phone baseURI:Weight ?x), lessThan(?x,5.5) -> (?phone baseURI:LightWeight "Yes"^^xsd:string)]
